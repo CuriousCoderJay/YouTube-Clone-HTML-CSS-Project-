@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube.com Clone</title>
 
+    <!--These are considered links, this is a way to not only link external CSS, from an organization perspective, but it's also how I've inserted certain text fonts directly from Google.com-->
+    >
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +19,7 @@
     <link rel="stylesheet" href="styles/sidebar.css" />
   </head>
   <body>
+    <!--This first section is considered the header bar, it runs along the top of the webpage, in a fixed position & is broken down into 3 sections, left, middle, and right.  It's where I have certain icons displayed, the search bar, as well as the YouTube logo. There are nested-flexbox components as well as tooltips into play. The CSS externally linked to the button customization as well as tooltips  is the 'ytheader.css' -->
     <header class="header">
       <div class="left-section">
         <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="" />
@@ -28,7 +31,7 @@
           <img class="search-icon" src="icons/search.svg" alt="" />
           <div class="tooltip">Search</div>
         </button>
-        <!-- Put position absolute inside position relative to create a tooltip :-->
+        <!-- Dev tip/reminder: Put position absolute inside position relative to create a tooltip :-->
         <button class="voice-button">
           <img class="voice-icon" src="icons/voice-search-icon.svg" alt="" />
           <div class="tooltip">Search with your voice</div>
